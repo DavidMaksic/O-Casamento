@@ -1,0 +1,107 @@
+@use '../base/base' as *;
+@use '../abstracts/mixins' as *;
+
+.pricing {
+   @include flex;
+
+   &__tables {
+      @include flex-gap(10rem);
+
+      // - Bellow 1500px
+      @media only screen and (max-width: 93.75em) {
+         width: 90vw;
+         margin: 0 auto;
+      }
+
+      @include respond(tab-land) {
+         @include flex-column(6rem);
+      }
+   }
+
+   & table {
+      border: 1px solid #e5e5e5;
+      font-size: var(--s-lg);
+      margin-top: var(--ws-3xs);
+      border-collapse: collapse;
+
+      @include respond(tab-port) {
+         width: 90vw;
+         margin: 0 auto;
+      }
+
+      @include respond(phone-land) {
+         width: 70vw;
+      }
+
+      & th {
+         @include respond(phone) {
+            font-size: 1.6rem;
+         }
+      }
+
+      & th,
+      td {
+         text-align: left;
+         padding: var(--s-xl);
+
+         @include respond(phone) {
+            padding: var(--s-lg);
+         }
+      }
+
+      & thead th {
+         background-color: var(--cl-accent-shade);
+         color: #fff;
+         padding: var(--s-2xl);
+
+         @include respond(phone) {
+            padding: 2rem;
+         }
+
+         &::selection {
+            background-color: var(--cl-accent-tint);
+            color: #fff;
+         }
+      }
+
+      & tbody tr:nth-child(odd) {
+         background-color: #fff;
+      }
+   }
+
+   .table-1 {
+      @include respond(phone) {
+         width: 90vw;
+      }
+
+      & tbody tr:nth-child(even) {
+         background: linear-gradient(
+            90deg,
+            rgba(212, 212, 212, 1) 0%,
+            rgba(229, 229, 229, 1) 100%
+         );
+
+         @include respond(tab-land) {
+            background: var(--cl-neutral-300);
+         }
+      }
+   }
+
+   .table-2 {
+      @include respond(phone) {
+         width: 90vw;
+      }
+
+      & tbody tr:nth-child(even) {
+         background: linear-gradient(
+            90deg,
+            rgba(229, 229, 229, 1) 0%,
+            rgba(212, 212, 212, 1) 100%
+         );
+
+         @include respond(tab-land) {
+            background: var(--cl-neutral-300);
+         }
+      }
+   }
+}
