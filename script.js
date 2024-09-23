@@ -6,7 +6,6 @@ const aboutSection = document.querySelector('.about');
 const observer = new IntersectionObserver(
    function (entries) {
       const ent = entries[0];
-      console.log(ent);
 
       if (!ent.isIntersecting) {
          document.querySelector('.nav').classList.add('sticky');
