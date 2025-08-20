@@ -2,7 +2,7 @@
 
 A brochure website for a fictional wedding company, which showcases what this company offers.
 
-To install this project, run it using the Live Server extension.
+To run this project, use the Live Server extension in VS Code.
 
 <br>
 
