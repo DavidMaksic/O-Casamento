@@ -2,6 +2,8 @@
 
 A brochure website for a fictional wedding company, which showcases what this company offers.
 
+To install this project, run it using the Live Server extension.
+
 <br>
 
 You can check out [the live demo here](https://davidmaksic.github.io/O-Casamento/).
