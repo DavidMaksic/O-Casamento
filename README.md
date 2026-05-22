@@ -8,4 +8,4 @@ To run this project, use the Live Server extension in VS Code.
 
 You can check out [the live demo here](https://davidmaksic.github.io/O-Casamento/).
 
-![main image](https://davidmaksic.vercel.app/assets/casamento-entire-page-DWoLgbrO.webp)
+![main image](https://davidmaksic.vercel.app/casamento-entire-page.webp)
